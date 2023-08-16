@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="password-heading">Password Generator</h1>
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button class ="copyBtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <img src="assets/copy.svg" alt="Copy" width="23" height="23">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p class="num" data-lengthNumber>0</p>
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="Uppercase">
+                <label for="Uppercase">Includes Uppercase letters </label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="Lowercase">
+                <label for="Lowercase">Includes Lowercase letters </label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="Numbers">
+                <label for="Numbers">Includes Numbers </label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="Symbol">
+                <label for="Symbol">Includes Symbols </label>
+            </div>
+
+            <div class="strength-container">
+                <h2>Strength</h2>
+                <div class="indicator" data-indicator></div>
+
+            </div>
+            <button class="generate">Generate Password</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
