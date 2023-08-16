@@ -3,7 +3,7 @@
 
 The Web-Based Password Generator is an online tool designed to help users create strong and secure passwords for their various online accounts and applications. This project aims to provide an easily accessible and user-friendly solution for generating complex passwords to enhance online security.
 
-- **Link :**  [Click Here](password-generator-sg.netlify.app)
+- **Link :**  [Click Here](https://password-generator-sg.netlify.app/)
 ## Key Features:
 - **User Interface:** The web application will feature a clean and intuitive user interface that allows users of all skill levels to generate passwords with ease.
 - **Password Complexity Options:** Users can select the level of complexity for their passwords, including options like uppercase letters, lowercase letters, numbers, and special characters.
