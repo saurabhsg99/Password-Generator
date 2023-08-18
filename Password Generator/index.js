@@ -80,6 +80,9 @@ function calcStrength() {
 }
 
 async function copyContent() {
+
+
+    
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
         copyMsg.innerText = "copied";
@@ -88,6 +91,7 @@ async function copyContent() {
         copyMsg.innerText = "Failed";
     }
     //to make copy wala span visible
+    
     copyMsg.classList.add("active");
 
     setTimeout(() => {
@@ -136,14 +140,33 @@ inputSlider.addEventListener('input', (e) => {
 
 
 copyBtn.addEventListener('click', () => {
+    // if (checkCount == 0) {
+    //     // alert("Password must include any character");
+    //     displayMessage(`⚠️
+    //     First Generate Password !
+    //     ⚠️`);
+    //     return;
+    // }
     if (passwordDisplay.value)
         copyContent();
+    else {
+         // alert("Password must include any character");
+         displayMessage(`⚠️
+         First Generate Password !
+         ⚠️`);
+         return;
+    }
 })
 
 generateBtn.addEventListener('click', () => {
     
-    if (checkCount == 0)
+    if (checkCount == 0) {
+        // alert("Password must include any character");
+        displayMessage(`⚠️
+        Must include atleast one character!
+        ⚠️`);
         return;
+    }
 
     if (passwordLength < checkCount) {
         passwordLength = checkCount;
@@ -192,3 +215,23 @@ generateBtn.addEventListener('click', () => {
     
     calcStrength();
 });
+
+
+function displayMessage(msgText) {
+    const body = document.body;
+
+    const panel = document.createElement("div");
+    panel.setAttribute("class", "msgBox");
+    body.appendChild(panel);
+
+    const msg = document.createElement("p");
+    msg.textContent = msgText;
+    panel.appendChild(msg);
+
+    setTimeout(() => {
+        panel.style.display = "none";
+    }, 1500);
+    
+
+}
+
