@@ -42,9 +42,9 @@ The Web-Based Password Generator is an online tool designed to help users create
 
 <img src = "Screenshot 2023-08-16 231256.png" alt = "Screenshots">
 <p float ="left">
-<img src = "ss.jpeg" width="33%" alt = "Screenshots">
-<img src = "screenshots (1).jpeg" width="33%" alt = "Screenshots">
-<img src = "screenshots (2).jpeg" width="33%" alt = "Screenshots">
+<img src = "ss.jpeg" width="32%" alt = "Screenshots">
+<img src = "screenshots (1).jpeg" width="32%" alt = "Screenshots">
+<img src = "screenshots (2).jpeg" width="32%" alt = "Screenshots">
 </p>
 
 
